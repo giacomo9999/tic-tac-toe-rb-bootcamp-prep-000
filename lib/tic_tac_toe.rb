@@ -95,10 +95,8 @@ def play(board)
   while !over?(board)
     turn(board)
   end
-  if won?(board) && turn_count(board)%2 == 0
-     puts "Congratulations O!"
-   elsif won?(board) && turn_count(board)%2 != 0
-     puts "Congratulations X!"
+  if won?(board)
+     puts "Congratulations #{board[won?(board)[0]]}!"
    else
      puts "Cat's Game!"
    end
