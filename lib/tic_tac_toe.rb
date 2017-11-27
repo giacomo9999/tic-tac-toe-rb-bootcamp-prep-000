@@ -61,7 +61,7 @@ def winner(board)
   # won?(board) gives us the win_combo of [0, 1, 2]
   # won?(board)[0] gives us 0
   # board[won?(board)[0]] gives us "X", "O"
-  return board [won?(board) [0]] if won?(board) != false
+  return board[won?(board)[0]] if won?(board) != false
   return nil
 end
 
